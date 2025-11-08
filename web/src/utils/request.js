@@ -1,15 +1,11 @@
 // src/utils/request.js
 import { getToken } from "@/utils/auth.js";
 
-/**
- * ✅ 自动切换接口环境
- * - 本地开发时使用 localhost:3000
- * - 上线后自动使用你的域名 https://cckks.com.cn
- */
+
 const isProd = import.meta.env.PROD;
 export const API_BASE = isProd
-  ? "https://cckks.com.cn/api"  // ✅ 线上接口
-  : "http://localhost:3000/api"; // ✅ 本地开发接口
+  ? "http://121.43.193.192:3000/api" // ✅ 线上接口
+  : "http://localhost:3000"; // ✅ 本地开发接口
 
 /**
  * 🌍 通用请求函数

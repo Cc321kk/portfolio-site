@@ -4,7 +4,7 @@ import path from "path";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/portfolio-site/", // ✅ 末尾要加斜杠！
+  base: "./", // ✅ 末尾要加斜杠！
   plugins: [vue()],
   resolve: {
     alias: {
